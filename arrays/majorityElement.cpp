@@ -17,8 +17,8 @@ class Solution{
     {
         
     int globalMax=INT_MIN;
-    
     int index=-1;
+    sort(arr,arr);
     for(int i=0;i<size;i++){
         int localMax=0;
         for(int j=0;j<size;j++){

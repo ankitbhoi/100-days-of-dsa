@@ -1,0 +1,69 @@
+//{ Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
+
+// } Driver Code Ends
+class Solution{
+    public:
+    // void segregateElements(int arr[],int n)
+    // {
+    //     int low=0;
+    //     int high=n-1;
+    //     while(low<high){
+    //         if(arr[low]>0 && arr[high]>0){
+    //             low++;
+    //         }
+    //         else if(arr[low]<0 && arr[high]>0){
+    //             swap(arr[low],arr[high]);
+    //             low++;
+    //             high--;
+    //         }
+    //         else if(arr[low]>0 && arr[high]<0){
+    //             low++;
+    //             high--;
+    //         }
+    //     }
+        
+    // }
+    void segregateElements(int arr[],int n)
+   {
+       vector<int> neg;
+       int begin = 0;
+       for(int i=0; i<n; i++){
+           if(arr[i] > 0){
+               arr[begin] = arr[i];
+               begin++;
+           }else{
+               neg.push_back(arr[i]);
+           }
+       }
+       
+       for(auto x:neg){
+           arr[begin] = x;
+           begin++;
+       }
+   }
+};
+
+//{ Driver Code Starts.
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int n;
+		cin>>n;
+		int a[n];
+		for(int i=0;i<n;i++)
+		cin>>a[i];
+		Solution ob;
+		ob.segregateElements(a,n);
+		
+        for(int i=0;i<n;i++)
+        cout<<a[i]<<" ";
+		cout<<endl;
+	}
+}
+
+// } Driver Code Ends
