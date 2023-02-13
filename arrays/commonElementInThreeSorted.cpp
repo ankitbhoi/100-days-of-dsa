@@ -50,3 +50,6 @@ int main()
     findCommon(ar1, ar2, ar3, n1, n2, n3);
     return 0;
 }
+
+
+
