@@ -1,3 +1,2 @@
-for(auto i:arr){
-    //     cout<<i<<" ";
-    // }
+  swap(arr[low],arr[j]);
+    return j;
