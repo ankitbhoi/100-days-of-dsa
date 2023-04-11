@@ -25,19 +25,46 @@ void insert_at_head(Node* &head,int val){
     head=temp;
 }
 
+
 void insert_at_tail(Node *&head,int val){
     if(head==NULL){
         insert_at_head(head,val);
+    }
+    else{
+        Node *curr=new Node(val);
+        Node *temp=head;
+        while(temp->next!=NULL){
+            temp=temp->next;
+        }
+        temp->next=curr;
+        curr->prev=temp;
+    }
+    
+}
+
+void insert_at_middle(Node* &head,int position,int val){
+    if(position==1){
+        insert_at_head(head,val);
         return;
     }
+
     Node *curr=new Node(val);
     Node *temp=head;
-    while(temp->next!=NULL){
+    int index=1;
+    while(temp!=NULL){
+        index++;
+        if(index==position){
+            curr->next=temp->next;
+            temp->next->prev=curr;
+            temp->next=curr;
+            curr->prev=temp;
+            break;
+        }
         temp=temp->next;
+        
     }
-    temp->next=curr;
-    curr->prev=temp;
-};
+}
+
 
 void display(Node* &head){
     Node *temp=head;
@@ -55,6 +82,7 @@ int main(){
     insert_at_tail(head, 4);
     insert_at_tail(head, 5);
 
+    insert_at_middle(head,3,24);
     display(head);
 
 return 0;
