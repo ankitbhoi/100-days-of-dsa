@@ -1,0 +1,36 @@
+#tail recursion
+void solve(){
+    //BASE CASE
+    //PROCESSING
+    //RECURSIVE RELATION
+}
+void print(int n){
+    if(n==0){
+        return;
+    }
+
+    cout<<n;
+
+    print(n-1);
+}
+
+#heAD recursion
+void solve(){
+    //BASE CASE
+    //RECURSIVE RELATION
+    //PROCESSING
+}
+
+void print(int n){
+    if(n==0){
+        return;
+    }
+
+    print(n-1);
+
+    cout<<n;   
+}
+
+
+
+The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function.

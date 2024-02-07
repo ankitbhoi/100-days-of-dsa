@@ -1,0 +1,5 @@
+int arr[] = {1, 2, 3, 4, 5};
+int n = sizeof(arr) / sizeof(arr[0]);
+
+sizeof(arr) returns the total size of the array in bytes, and sizeof(arr[0]) returns the size of one element in the array in bytes. By dividing the total size of the array by the size of one element, you get the number of elements in the array.
+
