@@ -34,9 +34,9 @@ int maximizeTheCuts(int N,int x,int y,int z){
         return INT_MIN;
     }
 
-    int x1= maximizeTheCuts(N-x,x,y,z)+1;
-    int y1= maximizeTheCuts(N-y,x,y,z)+1;
-    int z1= maximizeTheCuts(N-z,x,y,z)+1;
+    int x1 = maximizeTheCuts(N-x,x,y,z)+1;
+    int y1 = maximizeTheCuts(N-y,x,y,z)+1;
+    int z1 = maximizeTheCuts(N-z,x,y,z)+1;
     
     return max({x1,y1,z1});
     
