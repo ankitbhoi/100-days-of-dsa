@@ -1,0 +1,5 @@
+stoi karne k liye  num[i]-'0'
+itos karne k liye num[i]+'0'
+
+find -> jo substr ko khoj ke lata hai (isko bas string ki zarurt hai)
+substr -> jo katke string ko alag kr deta hai (iska first element would be initial index, second would be number of letters)
