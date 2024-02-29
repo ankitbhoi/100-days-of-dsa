@@ -1,0 +1,49 @@
+What is Tree?
+    ek prakar ka non linear data structure hai
+
+Linked list me ek node ek se hi connected hota hai
+
+nonlinear -> bcz single node is connected to multiple nodes
+
+every node must be connected to two nodes for binary Tree
+
+every node being connected to more than two nodes or N nodes are called N-ary treee
+
+TERMS RELATED TO TREE:=
+
+NODE= Tree nodes are points of data convergence where a tree branches into levels. Smallest unit in a tree.
+node -> data,left ka pointer, right ka pointer
+
+For n-ary tree
+class Node{
+    int data;
+    vector<node*>child;
+}
+
+ROOT = topmost node of the tree 
+
+PARENT = current node ka jo above level wala node hai usse linked   
+
+LEVEl hamesha zero se start hota hai 
+
+ANCESTOR = Current node k parents ko likhte jao wo sare ancestors honge 
+        like current ka parent phir uska parent ayse.
+
+Descendant = current node k child then uska child wo sare Descendants;
+
+SIBLINGS:- Same parent k sare ke sare child jo hai wo sibling honge
+
+LEAF :- Aysi node jiska koi aur child nai
+
+
+
+CREATION OF A TREE
+
+A)Create root node B)root->left via recursion C)root->right via recursion 
+
+assume to 
+if i/p !=-1 valid data 
+if i/p ==-1 NULL return
+
+yeh basically smjhne k liye hai ki agr input me kavi -1 aajata hai series of number me mtlb wahan null hai ya uska previous wala leaf node hai
+
