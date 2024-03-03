@@ -47,3 +47,53 @@ if i/p ==-1 NULL return
 
 yeh basically smjhne k liye hai ki agr input me kavi -1 aajata hai series of number me mtlb wahan null hai ya uska previous wala leaf node hai
 
+LAVAL ORDER TRAVERSAL CODE AND EXPLANATION IN FILE
+
+Three types of traversal:- 
+inorder(LNR)        left    currentNode     right
+preorder(NLR)
+postorder(LRN) 
+
+void inorderTraversal(Node* root){
+    //base case
+    if(root==NULL){
+        return;
+    }
+
+    //LNR
+    inorderTraversal(root->left);
+    cout<< root -> data << " ";
+    inorderTraversal(root->right);
+}
+
+void preorderTraversal(Node* root){
+    //base case
+    if(root==NULL){
+        return;
+    }
+
+    //NLR
+    cout<< root -> data << " ";
+    preorderTraversal(root->left);
+    preorderTraversal(root->right);
+}
+
+void postorderTraversal(Node* root){
+    //base case
+    if(root==NULL){
+        return;
+    }
+
+    //LRN
+    postorderTraversal(root->left);
+    postorderTraversal(root->right);
+    cout<< root -> data << " ";
+}
+
+Height of Tree:- max depth v kehte hai
+
+A binary tree's max depth is the number of nodes along the longest path from root to farthest leaf node.
+CODE DIA HUA HAI 
+
+DIAMETER OF A TREE:- CODE DIA HUA HAI 
+

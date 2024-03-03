@@ -35,10 +35,24 @@ Node* buildTree(){
     return root;
 }
 
+//ans
+int height(Node* root){
+    if(root==NULL){
+        return 0;
+    }
+
+    int leftHeight = height(root->left);
+    int rightHeight =  height(root->right);
+
+    int ans = max(leftHeight,rightHeight)+1;
+}
+
 int main(){
 
     Node* root = NULL;
     root = buildTree();
+
+    cout<< "height: " << height(root)<<endl;
 
 return 0;
 } 
