@@ -1,0 +1,4 @@
+balanced = left subtree height - right subtree height (absolute diff) <=1
+
+complete binary tree =  left ke sare nodes filled hone chaiye and left to right tree build hoti hai 
+
