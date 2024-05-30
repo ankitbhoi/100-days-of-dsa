@@ -1,4 +1,8 @@
-balanced = left subtree height - right subtree height (absolute diff) <=1
+binary tree =  a type of tree that has at most two child nodes
+
+balanced = every node ka left subtree height - right subtree height (absolute diff) <=1
 
 complete binary tree =  left ke sare nodes filled hone chaiye and left to right tree build hoti hai 
+
+fully/perfect binary tree =  every node has either 0 or 2 child nodes.
 
